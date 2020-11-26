@@ -56,6 +56,11 @@ const HeaderFrame = styled.div`
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     padding: 0.5rem 1rem;
   `}
+
+  @media screen and (max-width: 1320px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `
 
 const HeaderControls = styled.div`
@@ -103,6 +108,11 @@ const HeaderRow = styled(RowFixed)`
     width: 100%;
     display: block;
   `};
+
+  @media screen and (max-width: 1120px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `
 
 const HeaderLinks = styled(Row)`
@@ -236,6 +246,11 @@ const StyledNavLink = styled(NavLink).attrs({
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     margin: 0;
   `}
+
+  @media screen and (max-width: 1120px) {
+    margin: 0 24px 0 0;
+    font-size: 14px;
+  }
 `
 
 const StyledExternalLink = styled(ExternalLink).attrs({
@@ -267,6 +282,11 @@ const StyledExternalLink = styled(ExternalLink).attrs({
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     margin: 0;
   `}
+
+  @media screen and (max-width: 1120px) {
+    margin: 0 24px 0 0;
+    font-size: 14px;
+  }
 `
 
 const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
@@ -335,13 +355,16 @@ export default function Header() {
             Vote
           </StyledNavLink> */}
           <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/farm/'}>
-            {t('farm')} <span>↗</span>
+            {t('farm')}
+            {/* <span>↗</span> */}
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
-            {t('bridge')} <span>↗</span>
+            {t('bridge')}
+            {/* <span>↗</span> */}
           </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/info'}>
-            {t('analytics')} <span>↗</span>
+            {t('analytics')}
+            {/* <span>↗</span> */}
           </StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>
