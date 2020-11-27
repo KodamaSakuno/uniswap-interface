@@ -367,5 +367,6 @@
   "yourTransactionMayBeFrontrun": "Ihre Transaktion kann frontrun sein",
   "yourTransactionMayFail": "Ihre Transaktion kann fehlschlagen",
   "yourTransactionsWillAppearHere": "Ihre Transaktionen werden hier angezeigt ...",
-  "yourUnclaimed": "Du bist nicht beansprucht"
+  "yourUnclaimed": "Du bist nicht beansprucht",
+  "nftmarket": "Nft Markt"
 }

@@ -367,5 +367,6 @@
   "yourTransactionMayBeFrontrun": "您的交易可能是搶先交易",
   "yourTransactionMayFail": "您的交易可能失敗",
   "yourTransactionsWillAppearHere": "您的交易將出現在這裡...",
-  "yourUnclaimed": "您無人認領"
+  "yourUnclaimed": "您無人認領",
+  "nftmarket": "Nft市場"
 }

@@ -358,6 +358,10 @@ export default function Header() {
             {t('farm')}
             {/* <span>↗</span> */}
           </StyledExternalLink>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://bsc.bestswap.com/nftmarket/'}>
+            {t('nftmarket')}
+            {/* <span>↗</span> */}
+          </StyledExternalLink>
           <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
             {t('bridge')}
             {/* <span>↗</span> */}
