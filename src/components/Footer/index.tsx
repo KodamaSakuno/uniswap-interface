@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
   return (
     <StyledFooter>
       <StyledFooterInner>
-        <StyledFooterItem style={{ alignItems: 'flex-start', marginBottom: 80 }}>
+        <StyledFooterItem style={{ alignItems: 'flex-start', marginBottom: 20 }}>
           <StyledFooterItemTitle>{t('partners')}:</StyledFooterItemTitle>
           <StyledFooterItemContennt>
             <StyledFooterItemContenntGrid>
@@ -73,6 +73,8 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   width: 100%;
+  background: #12161c;
+  box-shadow: 0px -3px 11px 0px rgba(0, 0, 0, 0.38);
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     padding-bottom: 40px;
   `}
@@ -83,7 +85,7 @@ const StyledFooterInner = styled.div`
   /* justify-content: center; */
   max-width: 1200px;
   width: 100%;
-  padding: 10px 15px 40px;
+  padding: 34px 15px 34px;
   box-sizing: border-box;
 `
 

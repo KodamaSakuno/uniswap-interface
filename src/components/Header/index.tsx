@@ -44,7 +44,8 @@ const HeaderFrame = styled.div`
   padding-right: 110px;
   padding-top: 18px;
   padding-bottom: 18px;
-  background-color: rgba(8, 8, 8, 0.25);
+  background-color: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.67);
   z-index: 2;
   ${({ theme }) => theme.mediaWidth.upToMedium`
     grid-template-columns: 1fr;
@@ -226,7 +227,7 @@ const StyledNavLink = styled(NavLink).attrs({
   outline: none;
   cursor: pointer;
   text-decoration: none;
-  color: #fec600;
+  color: #959595;
   font-size: 1rem;
   width: fit-content;
   margin: 0 12px;
@@ -235,12 +236,12 @@ const StyledNavLink = styled(NavLink).attrs({
   &.${activeClassName} {
     border-radius: 6px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000;
   }
 
   :hover,
   :focus {
-    color: #ffffff;
+    color: #000;
   }
 
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
@@ -262,7 +263,7 @@ const StyledExternalLink = styled(ExternalLink).attrs({
   outline: none;
   cursor: pointer;
   text-decoration: none;
-  color: #fec600;
+  color: #959595;
   font-size: 1rem;
   width: fit-content;
   margin: 0 12px;
@@ -272,12 +273,12 @@ const StyledExternalLink = styled(ExternalLink).attrs({
   &.${activeClassName} {
     border-radius: 6px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000;
   }
 
   :hover,
   :focus {
-    color: #ffffff;
+    color: #000;
   }
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     margin: 0;

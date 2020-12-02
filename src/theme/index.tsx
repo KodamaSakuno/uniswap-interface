@@ -9,7 +9,8 @@ import styled, {
 import { useIsDarkMode } from '../state/user/hooks'
 import { Text, TextProps } from 'rebass'
 import { Colors } from './styled'
-import BestswapBackground from '../assets/images/bestswap-bg.png'
+// import BestswapBackground from '../assets/images/bestswap-bg.png'
+import yun from '../assets/images/yun.png'
 
 export * from './components'
 
@@ -191,11 +192,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #5E5E5E;
-  background-image: url(${BestswapBackground});
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
 }
 
 * {
@@ -222,8 +218,36 @@ html {
   color: ${({ theme }) => theme.text1};
   background-color: ${({ theme }) => theme.bg2};
 }
-
 body {
   min-height: 100vh;
+  background-color: #FAF9FA;
+  background-size: 
+  auto 20px,
+  auto 20px,
+  auto 38px,
+  auto 42px,
+  auto 20px,
+  auto 20px,
+  auto 20px,
+  auto 42px;
+  background-position: 
+  20px 200px,
+  200px 360px,
+  0 600px,
+  140px 900px,
+  100% 100px,
+  calc(100% - 60px) 300px,
+  calc(100% - 170px) 470px,
+  calc(100% - 40px) 700px;
+  background-repeat: no-repeat;
+  background-image:
+    url(${yun}),
+    url(${yun}),
+    url(${yun}),
+    url(${yun}),
+    url(${yun}),
+    url(${yun}),
+    url(${yun}),
+    url(${yun});
 }
 `
